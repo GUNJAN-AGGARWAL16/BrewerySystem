@@ -1,3 +1,4 @@
+require('dotenv').config();
 import express, { Application, Request, Response } from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
@@ -58,3 +59,4 @@ const userService = new UserService();
 const reviewService = new ReviewService();
 const app = new App(userService, reviewService);
 app.listen();
+
